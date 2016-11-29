@@ -113,6 +113,12 @@ export const patterns = [{
 	tags:"text"
 },
 {
+	name:"Query string params",
+	regex:/(\?|\&)([^=]+)\=([^&]+)/,
+	description:"Match query string params from URL",
+	tags:"url,query"	
+},
+{
 	name:"ID of Youtube video",
 	regex:/https?:\/\/(?:youtu\.be\/|(?:[a-z]{2,3}\.)?youtube\.com\/watch(?:\?|#\!)v=)([\w-]{11}).*/gi,
 	description:"Match the ID of a youtube video URL",
